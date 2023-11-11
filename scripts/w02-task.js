@@ -7,7 +7,7 @@ let fullName = 'Brenin Peterson';
 
 let currentYear = new Date().getFullYear();
 
-let profilePicture = 'C:\Users\elder\OneDrive\Desktop\cse121b\images';
+let profilePicture = 'C:\Users\elder\OneDrive\Desktop\cse121b\images\brenindpeterson.png';
 
 /* Step 3 - Element Variables */
 
@@ -17,7 +17,7 @@ const foodElement = document.getElementById('food');
 
 const yearElement = document.querySelector('#year');
 
-const imageElement = document.getElementById('profileImage');
+const imageElement = document.createElement('profileImage');
 
 /* Step 4 - Adding Content */
 
