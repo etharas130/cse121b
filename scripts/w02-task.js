@@ -30,7 +30,7 @@ imageElement.setAttribute('src', profilePicture);
 imageElement.setAttribute('alt', 'Profile Image of ' + fullName);
 /* Step 5 - Array */
 
-let favFoods = ['Pasta', 'Steak','Asparagus','Burgers'];
+let favFoods = ['Pasta', 'Steak','Asparagus','Salad'];
 
 foodElement.innerHTML = favFoods;
 
