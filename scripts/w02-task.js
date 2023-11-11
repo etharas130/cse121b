@@ -32,7 +32,7 @@ imageElement.setAttribute('alt', 'Profile Image of ${profilePicture}');
 
 let favFoods = ['Pasta', 'Steak','Asparagus','Burgers'];
 
-foodElement.textContent = '${favFoods}';
+foodElement.innerHTML = favFoods;
 
 let oneFavFood = 'Chicken';
 
