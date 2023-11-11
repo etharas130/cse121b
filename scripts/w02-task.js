@@ -15,19 +15,19 @@ const nameElement = document.getElementById('name');
 
 const foodElement = document.getElementById('food');
 
-const yearElement = document.getElementById('#year');
+const yearElement = document.querySelector('#year');
 
 const imageElement = document.getElementById('profileImage');
 
 /* Step 4 - Adding Content */
 
-nameElement.innerHTML = '<strong>${fullName}</strong>';
+nameElement.innerHTML = '<strong> ${fullName}</strong>';
 
 currentYear.innerHTML = '${currentYear}';
 
 imageElement.setAttribute('src', profilePicture);
 
-imageElement.setAttribute('alt', 'Profile Image of {fullName}');
+imageElement.setAttribute('alt', 'Profile Image of ${fullName}');
 /* Step 5 - Array */
 
 let favFoods = ['Pasta', 'Steak','Asparagus','Burgers'];
