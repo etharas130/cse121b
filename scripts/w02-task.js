@@ -21,13 +21,13 @@ const imageElement = document.querySelector('img');
 
 /* Step 4 - Adding Content */
 
-nameElement.innerHTML = '<strong>${fullName}</strong>';
+nameElement.innerHTML = '<strong>' + fullName + '</strong>';
 
-currentYear.innerHTML = '${currentYear}';
+currentYear.innerHTML = currentYear;
 
 imageElement.setAttribute('src', profilePicture);
 
-imageElement.setAttribute('alt', 'Profile Image of ${profilePicture}');
+imageElement.setAttribute('alt', 'Profile Image of ' + profilePicture);
 /* Step 5 - Array */
 
 let favFoods = ['Pasta', 'Steak','Asparagus','Burgers'];
@@ -38,15 +38,15 @@ let oneFavFood = 'Chicken';
 
 favFoods.push(oneFavFood);
 
-foodElement.textContent += '<br>${favFoods}';
+foodElement.innerHTML += '<br>' + favFoods;
 
 favFoods.shift();
 
-foodElement.textContent += '<br>${favFoods}';
+foodElement.innerHTML += '<br>' + favFoods;
 
 favFoods.pop();
 
-foodElement.textContent += '<br>${favFoods}';
+foodElement.innerHTML += '<br>' + favFoods;
 
 
 
