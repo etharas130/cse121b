@@ -21,7 +21,7 @@ const imageElement = document.getElementById('profileImage');
 
 /* Step 4 - Adding Content */
 
-nameElement.innerHTML = '<strong> ${fullName}</strong>';
+nameElement.innerHTML = '<strong>{fullName}</strong>';
 
 currentYear.innerHTML = '${currentYear}';
 
