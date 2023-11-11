@@ -7,7 +7,7 @@ let fullName = 'Brenin Peterson';
 
 let currentYear = new Date().getFullYear();
 
-let profilePicture = 'C:\Users\elder\OneDrive\Desktop\cse121b\images\brenindpeterson.png';
+let profilePicture = 'images\brenindpeterson.png';
 
 /* Step 3 - Element Variables */
 
@@ -17,7 +17,7 @@ const foodElement = document.getElementById('food');
 
 const yearElement = document.querySelector('#year');
 
-const imageElement = document.createElement('profileImage');
+const imageElement = document.querySelector('img');
 
 /* Step 4 - Adding Content */
 
@@ -27,26 +27,26 @@ currentYear.innerHTML = '${currentYear}';
 
 imageElement.setAttribute('src', profilePicture);
 
-imageElement.setAttribute('alt', 'Profile Image of ${fullName}');
+imageElement.setAttribute('alt', 'Profile Image of ${profilePicture}');
 /* Step 5 - Array */
 
 let favFoods = ['Pasta', 'Steak','Asparagus','Burgers'];
 
-foodElement.innerHTML = '${favFoods}';
+foodElement.textContent = '${favFoods}';
 
 let oneFavFood = 'Chicken';
 
 favFoods.push(oneFavFood);
 
-foodElement.innerHTML += '<br>${favFoods}';
+foodElement.textContent += '<br>${favFoods}';
 
 favFoods.shift();
 
-foodElement.innerHTML += '<br>${favFoods}';
+foodElement.textContent += '<br>${favFoods}';
 
 favFoods.pop();
 
-foodElement.innerHTML += '<br>${favFoods}';
+foodElement.textContent += '<br>${favFoods}';
 
 
 
