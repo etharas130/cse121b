@@ -23,7 +23,7 @@ const imageElement = document.getElementById('profileImage');
 
 nameElement.innerHTML = '<strong>${fullName}</strong>';
 
-textContext.currentYear = '${currentYear}';
+currentYear.innerHTML = '${currentYear}';
 
 imageElement.setAttribute('src', profilePicture);
 
