@@ -7,7 +7,7 @@ let fullName = 'Brenin Peterson';
 
 let currentYear = new Date().getFullYear();
 
-let profilePicture = 'images\brenindpeterson.png';
+let profilePicture = 'images/brenindpeterson.png';
 
 /* Step 3 - Element Variables */
 
