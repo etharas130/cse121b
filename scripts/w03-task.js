@@ -62,13 +62,15 @@ document.querySelector('#divideNumbers').addEventListener('click', divideNumbers
 document.querySelector('#getTotal').addEventListener('click', calculateTotal);
 
 function calculateTotal() {
-    let subtotalInput = document.querySelector('#subtotal');
+    let subtotalInput = Number(document.querySelector('#subtotal').value);
     let subtotal = parseFloat(subtotalInput);
-    let membershipCheck = document.querySelector('#membership');
+    let membershipCheck = document.querySelector('#member').checked;
+    let discountedTotal = 0;
     if (membershipCheck == true) {
-        let discountedTotal = subtotal - (subtotal * .15);
+        let discount = .15;
+        discountedTotal += subtotal - (subtotal * discount);
     } else {
-        discountedTotal = subtotal;
+        discountedTotal += subtotal;
     }
     const totalSpan = document.getElementById('total');
     totalSpan.textContent = `$${discountedTotal.toFixed(2)}`;
